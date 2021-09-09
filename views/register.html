@@ -14,11 +14,14 @@
     <header class="contenedor-header">
 
         <img class="logo" src="/images/logo-mercado-liebre.svg">
-
-        <div class="for contenedor-flex-header" action="#" method="GET">
+        <form action="#" method="POST">
+            <input type="text" name="campo-texto">
+            <button class="boton_buscar" type="submit" name="boton-buscar"><i class="fa fa-search"></i></button>
+        </form>
+        <!--<div class="for contenedor-flex-header" action="#" method="GET">
             <div class="input text-box" >Buscar productos, marcas</div>
             <div class="submit buscar"><i class="fa fa-search"></i></div>
-        </div>
+        </div>-->
         <div class="justificar-centro">
             <p ><i class="fas fa-hand-holding-usd "></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
@@ -43,7 +46,7 @@
         </div>
 
     </header>
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="form">
         <label for="nombre">Nombre y Apellido</label>
         <input type="text" name="nombre" id="nombre"><br>
 
@@ -56,7 +59,7 @@
         <label for="domicilio">Domicilio</label>
         <input type="text" name="domicilio" id="domicilio"><br>
 
-        <section>
+        <section class="estilo-radio-but">
             <label for="perfil">comprar</label>
             <input type="radio" name="perfil" id="perfil">
 
@@ -79,8 +82,8 @@
         <label for="interes-5">Vida Sana</label>
         <input type="checkbox" name="interes" id="interes-5"><br>
 
-        <label for="contraseña">Contraseña</label>
-        <input type="password" name="contraseña" id="contraseña"><br>
+        <label for="contraseña" >Contraseña</label>
+        <input  type="password" name="contraseña" id="contraseña"><br>
 
         <label for="contraseña1">Confirma Contraseña</label>
         <input type="password" name="contraseña" id="contraseña1"><br>

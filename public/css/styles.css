@@ -27,8 +27,8 @@ body {
 .contenedor-flex-header {
     display: flex;
     width: 48%;
-    padding-right: 5px;
-    flex-wrap: wrap;
+    position: relative;
+    flex-wrap: nowrap;
 }
 
 .text-box {
@@ -52,6 +52,11 @@ body {
     font-size: 100%;
 }
 
+.boton_buscar {
+    background-color: white;
+    color: #666;
+}
+
 .justificar-centro {
     text-align: center;
     margin: 0 auto;
@@ -67,7 +72,20 @@ body {
     margin-bottom: 15px;
     padding: 5px;
     display: flex;
-    font-size: 100%
+    font-size: 100%;
+    flex-wrap: wrap;
+    width: 47.5%;
+    margin-left: 5%;
+}
+.estilo-lista2 {
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: flex;
+    font-size: 100%;
+    flex-wrap: wrap;
+    width: 47.5%;
+    text-align: right;
 }
 
 .estilo-enlace {
@@ -203,6 +221,19 @@ footer i {
 .estilo-boton-ingresa:hover {
     background-color: #0022AA;
 }
+
+.form {
+    margin: 20px 30%;
+    text-align: center;
+}
+.estilo-radio-but {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5% 0;
+    padding: auto;
+}
+
 @media (min-width: 361px) {
     .estilo-seccion-art:hover {
         box-shadow : 0px 0px 10px rgb(100, 100, 100);

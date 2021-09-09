@@ -15,11 +15,14 @@
     <header class="contenedor-header">
 
         <img class="logo" src="/images/logo-mercado-liebre.svg">
-
-        <div class="for contenedor-flex-header" action="#" method="GET">
+        <form action="#" method="POST">
+            <input type="text" name="campo-texto">
+            <button class="boton_buscar" type="submit" name="boton-buscar"><i class="fa fa-search"></i></button>
+        </form>
+       <!-- <div class="for contenedor-flex-header" action="#" method="GET">
             <div class="input text-box" >Buscar productos, marcas</div>
             <div class="submit buscar"><i class="fa fa-search"></i></div>
-        </div>
+        </div> -->
         <div class="justificar-centro">
             <p ><i class="fas fa-hand-holding-usd "></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
@@ -44,7 +47,7 @@
         </div>
 
     </header>
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="form">
 
         <label for="usuario">Nombre de Ususario</label>
         <input type="text" minlength="2" required name="usuario" id="usuario"><br>
